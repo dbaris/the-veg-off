@@ -1,8 +1,0 @@
-{
-  "name": "veg-off",
-  "description": "veg-off",
-  "repository": "https://github.com/heroku/veg-off",
-  // "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
-}
