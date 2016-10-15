@@ -1,30 +1,6 @@
 var userChoice = "veggie";
 
-function setToCSProf() {
-	userChoice = "prof";
-}
-
-function setToVeg() {
-	userChoice = "veggie";
-}
-
-
-function makeOff() {
-	console.log(userChoice);
-	if (userChoice === "veggie") {
-		getVeggies();
-	} else if (userChoice === "prof") {
-		getProf();
-	} 
-}
-
-function getVeggies() {
-
-	/* Make get request to json*/
-	// JSON.parse()
-
-	/* will actually get via get request & parse */
-	var veggieJSON = {
+var veggieJSON = {
     "description": "A list of vegetables.",
     "vegetables": [
         "acorn squash",
@@ -149,12 +125,38 @@ function getVeggies() {
         "white radish",
         "yam",
         "zucchini"
-    ]};	
+    ]};
+var adjectiveJSON = {"adjectives": ["little", "young", "big", "political", "bad", "social",  "free", "strong", "hard", "late", "cold", "heavy", "serious", "single", "beautiful", "happy", "afraid", "rich", "quiet", "concerned", "lonely",  "bright", "basic", "sick", "soft", "tall",  "popular", "tiny",  "powerful", "silent", "religious", "quick", "crazy", "angry", "perfect", "tired", "wild", "dangerous", "famous", "married", "terrible", "successful", "fair", "professional", "obvious", "proper", "sharp", "growing", "traditional", "slow", "surprised", "busy", "funny", "scientific", "ancient", "sweet", "secret", "tough", "careful", "domestic", "enormous", "sexy", "nervous", "critical", "proud", "complex", "guilty", "sad", "sleepy", "cool", "presidential", "weak", "unusual"]};
+
+
+function setToCSProf() {
+	userChoice = "prof";
+}
+
+function setToVeg() {
+	userChoice = "veggie";
+}
+
+
+function makeOff() {
+	console.log(userChoice);
+	if (userChoice === "veggie") {
+		getVeggies();
+	} else if (userChoice === "prof") {
+		getProf();
+	} 
+}
+
+function getVeggies() {
+
+	/* Make get request to json*/
+	// JSON.parse()
+
+	/* will actually get via get request & parse */	
 
 	chosenVeggie = veggieJSON["vegetables"][getRandomInt(0, veggieJSON["vegetables"].length)];
 
 	/* will actually get via get request & parse */
-	var adjectiveJSON = {"adjectives": ["little", "young", "big", "political", "bad", "social",  "free", "strong", "hard", "late", "cold", "heavy", "serious", "single", "beautiful", "happy", "afraid", "rich", "quiet", "concerned", "lonely",  "bright", "basic", "sick", "soft", "tall",  "popular", "tiny",  "powerful", "silent", "religious", "quick", "crazy", "angry", "perfect", "tired", "wild", "dangerous", "famous", "married", "terrible", "successful", "fair", "professional", "obvious", "proper", "sharp", "growing", "traditional", "slow", "surprised", "busy", "funny", "scientific", "ancient", "sweet", "secret", "tough", "careful", "domestic", "enormous", "sexy", "nervous", "critical", "proud", "complex", "guilty", "sad", "sleepy", "cool", "presidential", "weak", "unusual"]};
 	chosenAdj = adjectiveJSON["adjectives"][getRandomInt(0, adjectiveJSON["adjectives"].length)];
 
 
