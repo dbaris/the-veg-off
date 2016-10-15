@@ -26,11 +26,7 @@ app.use(function(req, res, next) {
 
 app.get('/', function(request, response)
 {
-        // request - is GPS enabled? great - send GPS coordinates to db
-        // search database for songs based on GPS coordinates
-                // 
-       // get response from server
-       // sort response based on when posted
+
 
        response.status(200);
        response.send("wow!");
