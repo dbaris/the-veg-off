@@ -1,5 +1,34 @@
 var userChoice = "veggie";
 
+var profsJSON = {
+"description": "A lit of professors",
+"professors": [
+	"Kathleen Fisher",
+	"Anselm Blumer",
+	"Remco Chang",
+	"Ming Chow",
+	"Alva Couch",
+	"Lenore Cowen",
+	"Jan P. de Ruiter",
+	"Fahad Dogar",
+	"Samuel Guyer",
+	"Soha Hassoun",
+	"Benjamin Hescott",
+	"Robert J. K. Jacob",
+	"Roni Khardon",
+	"Noah Mendelsohn",
+	"Bruce Molay",
+	"Norman Ramsey",
+	"Matthias Scheutz",
+	"Mark Sheldon",
+	"Donna Slonim",
+	"Diane Souvaine",
+	"Elena Strange",
+	"Greg Aloupis",
+	"Csaba Tóth"
+]};
+
+
 var veggieJSON = {
     "description": "A list of vegetables.",
     "vegetables": [
