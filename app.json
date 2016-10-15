@@ -1,0 +1,8 @@
+{
+  "name": "treble-mobile",
+  "description": "treble-mobile database",
+  "repository": "https://github.com/heroku/treble-mobile",
+  // "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
