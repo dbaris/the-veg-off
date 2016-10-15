@@ -1,10 +1,10 @@
-
-
 function getVeggies() {
 	/* Make get request to json*/
 	// JSON.parse()
 
-	var veggie = {
+
+	/* will actually get via get request & parse */
+	var veggieJSON = {
     	"description": "A list of vegetables.",
     	"vegetables": [
         	"acorn squash",
@@ -13,10 +13,17 @@ function getVeggies() {
         	"anise",
         	"artichoke"]};	
 
-	var vegList = veggie["vegetables"];	
+	var chosenVeggie = veggieJSON["vegetables"][getRandomInt(0, veggieJSON["vegetables"].length)];
 
-	var chosenVeggie = veggie["vegetables"][getRandomInt(0, veggie["vegetables"].length)];
+	/* will actually get via get request & parse */
+	var adjectiveJSON = {"adjectives": ["little", "young", "big"]};
+	var chosenAdj = adjectiveJSON["adjectives"][getRandomInt(0, adjectiveJSON["adjectives"].length)];
 
+	var veggieElem = document.getElementById("noun");
+	veggieElem.innerHTML(chosenVeggie);
+
+	var adjElem = document.getElementById("adjective");
+	adjElem.innerHTML(chosenAdj);
 
 }
 
