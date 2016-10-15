@@ -1,6 +1,6 @@
 var userChoice = "veggie";
 
-var profsJSON = {
+var profJSON = {
 "description": "A lit of professors",
 "professors": [
 	"Kathleen Fisher",
@@ -160,10 +160,14 @@ var adjectiveJSON = {"adjectives": ["little", "young", "big", "political", "bad"
 
 function setToCSProf() {
 	userChoice = "prof";
+    var elem = document.getElementById("menu");
+    elem.innerHTML = "Tufts Computer Science Professors";
 }
 
 function setToVeg() {
 	userChoice = "veggie";
+    var elem = document.getElementById("menu");
+    elem.innerHTML = "Vegetables";
 }
 
 
@@ -220,7 +224,8 @@ function getVeggies() {
 function getProf() {
 
 	/* choose random */
-	var chosenProf = "Ming Chow"
+	var chosenProf = profJSON["professors"][getRandomInt(0, profJSON["professors"].length)];
+    chosenAdj = adjectiveJSON["adjectives"][getRandomInt(0, adjectiveJSON["adjectives"].length)];
 
 	/* get image according to chosen veggie */
 	var bingAPIUrl = "https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=" + chosenProf + "&mkt=en-us";
